@@ -14,7 +14,7 @@ export class BarComponent implements OnInit {
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
-    this.getLinks()
+    // this.getLinks()
   }
 
   getLinks(): void {

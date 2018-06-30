@@ -5,6 +5,7 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 import { MessageService } from './message.service';
 import { Bar } from './bar/bar';
+import { Categories } from './categories'
 
 import { Utils } from './utility/utils';
 
@@ -16,7 +17,8 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class HeroService {
-  private linksURL = "api/links"; 
+  private linksURL = "api/links";
+  private categoriesURL = "api/categories"; 
   
   constructor(
     private http: HttpClient,
@@ -28,6 +30,14 @@ export class HeroService {
       .pipe(
         tap(links => this.log(`fetched links`)),
         catchError(this.handleError('getLinks', []))
+      );
+    }
+  /** GET categories from the server */
+  getCategories (): Observable<Categories[]> {
+    return this.http.get<Categories[]>(this.categoriesURL)
+      .pipe(
+        tap(categories => this.log(`fetched categories`)),
+        catchError(this.handleError('getCategories', []))
       );
   }
 

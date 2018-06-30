@@ -1,11 +1,19 @@
+
 <div>
-  <!-- <img src="../images/1.JPG"> -->
-  <img class="logo" src="../assets/1.JPG">
-  <!-- <add-banner [ads]="ads"></add-banner> -->
-  <!-- <nav class='links'> -->
-    <!-- <a routerlink="/home">Home</a> -->
-    <!-- <a routerlink="/aboutus">About Us</a> -->
-    <!-- <a routerlink="/inventory">Inventory</a> -->
-  <!-- </nav> -->
+    <img class="logo" src="../assets/logo1.png">
+
+    <div class="grid grid-pad">
+        <a *ngFor="let link of links" class="col-1-4"
+        routerLink="/{{link.id}}">
+        <div class="module link">
+          <h4>{{link.name}}</h4>
+        </div>
+      </a>
+    </div>
+  
+  
   <router-outlet></router-outlet>
+  <!-- <app-display-list></app-display-list> -->
+  
 </div>
+

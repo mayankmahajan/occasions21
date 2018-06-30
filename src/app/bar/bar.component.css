@@ -19,6 +19,7 @@
     text-align: center; margin-bottom: 0;
   }
   h4 {
+    font: 1em sans-serif;
     position: relative;
   }
   .grid {
@@ -28,10 +29,10 @@
     width: 25%;
   }
   .module {
-    padding: 2px;
+    /* padding: 2px; */
     text-align: center;
     color: #eee;
-    max-height: 10px;
+    max-height: 20px;
     min-width: 10px;
     background-color: #607d8b;
     border-radius: 2px;

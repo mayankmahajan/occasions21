@@ -3,6 +3,124 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 5%;
-    padding: 2%
+    width: 10%;
+    padding: 0%
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+}
+.image-carousel{
+    width: 10%;
+    height: 10%;
+    margin: auto;
+    position: relative;
+}
+/* DashboardComponent's private CSS styles */
+[class*='col-'] {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  [class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  h3 {
+    text-align: center; margin-bottom: 0;
+  }
+  h4 {
+    font: 1em sans-serif;
+    position: relative;
+    font: outline;
+  }
+  h2 {
+    font: 2em sans-serif;
+    position: relative;
+    font: outline;
+  }
+  .grid {
+    margin: 0;
+  }
+  .col-1-4 {
+    width: 25%;
+  }
+  .aboutuspointers{
+    text-align: center;
+    color: #eee;
+    max-height: 50px;
+    min-width: 10px;
+    background-color: goldenrod;
+    border-radius: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-display: inherit;
+
+  }
+  .module {
+    /* padding: 2px; */
+    text-align: center;
+    color: #eee;
+    max-height: 20px;
+    min-width: 10px;
+    background-color: #607d8b;
+    border-radius: 2px;
+  }
+  .module:hover {
+    background-color: #eee;
+    cursor: pointer;
+    color: #607d8b;
+  }
+  .grid-pad {
+    padding: 1px 0;
+  }
+  .grid-pad > [class*='col-']:last-of-type {
+    padding-right: 2px;
+  }
+  @media (max-width: 600px) {
+    .module {
+      font-size: 10px;
+      max-height: 75px; }
+  }
+  @media (max-width: 1024px) {
+    .grid {
+      margin: 0;
+    }
+    .module {
+      min-width: 60px;
+    }
+  }
+  .col-center-block {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-left: auto; margin-right: auto;
+}
+.centered {
+    text-align: center;
+    font-size: 0;
+}
+.centered > div {
+    float: none;
+    display: inline-block;
+    text-align: left;
+    font-size: 13px;
+}
+
+
+/* Extra: Just to see columns...*/
+.row {
+    /* border: 1px solid black; */
+}
+
+.row > div {
+    padding: 15px;
+    /* border: 1px solid red; */
 }
