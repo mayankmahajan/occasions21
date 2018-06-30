@@ -43,9 +43,9 @@
     font: outline;
   }
   h2 {
-    font: 2em sans-serif;
+    font: 1.5em sans-serif bold;
     position: relative;
-    font: outline;
+
   }
   .grid {
     margin: 0;
@@ -54,6 +54,26 @@
     width: 25%;
   }
   .aboutuspointers{
+    text-align: left;
+    color: #607d8b;
+    max-height: 50px;
+    min-width: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-display: inherit;
+
+  }
+  /* .aboutuspointers{
+    text-align: center;
+    color: #eee;
+    max-height: 50px;
+    min-width: 10px;
+    background-color:  #607d8b;
+    border-radius: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-display: inherit;
+
+  } */
+  .aboutuspointersbar{
     text-align: center;
     color: #eee;
     max-height: 50px;
@@ -104,7 +124,7 @@
     margin-left: auto; margin-right: auto;
 }
 .centered {
-    text-align: center;
+    /* text-align: center; */
     font-size: 0;
 }
 .centered > div {
@@ -114,13 +134,31 @@
     font-size: 13px;
 }
 
+/* .aboutuspointers > div {
+    display: inline;
+    background-color: aqua
+} */
 
 /* Extra: Just to see columns...*/
-.row {
+/* .row { */
     /* border: 1px solid black; */
-}
+/* } */
 
 .row > div {
-    padding: 15px;
+    padding: 5px;
+    padding-right: 5px;
     /* border: 1px solid red; */
+}
+.aboutus_pointer_icon{
+    display: inline-block;
+    width: 10%;
+    padding: 0%;
+    margin: 0 auto;
+    margin-left: auto; margin-right: auto;
+    
+
+}
+
+.col-sm-3{
+    width: 25%;
 }
